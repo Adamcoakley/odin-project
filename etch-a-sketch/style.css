@@ -1,0 +1,92 @@
+/* styling for body */
+body {
+    background-color: #000a19; /* darker navy background */
+    color: #ffffff; /* white text */
+    font-family: 'Press Start 2P', cursive; /* retro font */
+    text-align: center;
+    margin: 0;
+}
+
+/* header styling */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* main container */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* settings panel */
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+}
+
+/* colour wheel container */
+.colour-wheel-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* makes it a circle */
+    background-color: #FFC342; 
+    cursor: pointer;
+    transition: transform 0.3s ease; /* smooth transition for hover effect */
+}
+
+/* hover effect for colour wheel */
+.colour-wheel-container:hover {
+    transform: scale(1.05); /* make the colour wheel slightly bigger */
+}
+
+/* buttons styling */
+.buttons {
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    transition: all 0.3s ease; /* smooth transition for hover effects */
+    background-color: #ffffff; /* white */
+    color: #000a19; /* dark navy text */
+    cursor: pointer;
+    border: none;
+}
+
+/* hover effect for buttons */
+.buttons:hover {
+    background-color: #ffe8b6; /* light grey */
+    border-color: #ffe8b6; /* lighter grey border */
+    transform: scale(1.05); /* slightly increase size on hover */
+}
+
+/* active button state */
+.buttons.active {
+    background-color: #FFC342; /* light grey */ 
+}
+
+/* set the slider track color */
+input[type="range"] {
+    background: #FFC342; 
+}
+
+/* grid styling */
+.grid {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    background-color: #ffffff; /* white grid background */
+    border: 1px solid #001033; /* dark navy border */
+}
+
+/* individual grid cells */
+.grid-cell {
+    background-color: #ffffff; /* default cell color */
+    border: 1px solid #cfcfcf; /* subtle border for cells */
+    box-sizing: border-box; /* ensures padding/border don't affect size */
+}
