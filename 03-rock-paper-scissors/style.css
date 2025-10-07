@@ -1,43 +1,78 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif; /* fun font */
+    background: linear-gradient(135deg, #f0f8ff, #d1e7ff);
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+/* Image container */
 .image-container {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 40px;
 }
 
 .images {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    padding: 10px; /* padding so image doesn’t touch edge */
+    background-color: #ffffff; /* card background */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .images:hover {
     transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
 }
 
+/* Outcome */
 .outcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    margin-top: 30px;
+}
+
+#player-choice,
+#computer-choice,
+#score,
+#result-text {
+    font-size: 1.5rem; /* keep winner/tie same size */
+    margin: 10px 0;
 }
 
 #result-text.result-player-wins {
-    color: green;
+    color: #28a745; /* green */
     font-weight: bold;
 }
 
 #result-text.result-computer-wins {
-    color: red;
+    color: #dc3545; /* red */
+    font-weight: bold;
+}
+
+#result-text.tie {
+    color: #ffc107; /* yellow for tie */
     font-weight: bold;
 }
 
@@ -45,16 +80,21 @@
     display: none;
 }
 
+/* Button */
 button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
     border: none;
-    background-color: #008CBA;
+    border-radius: 8px;
+    background-color: #007BFF;
     color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #005f7f;
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
