@@ -104,8 +104,8 @@ function setActiveButton(button) {
     button.classList.add('active');
 }
 
-// initialize the grid and default button
-function initialize() {
+// initialise the grid and default button
+function initialise() {
     // set the default colour button as active
     const defaultButton = document.getElementById(DEFAULT_BUTTON);
     setActiveButton(defaultButton);
@@ -120,5 +120,5 @@ function initialize() {
     createGrid(DEFAULT_SIZE);
 }
 
-// call the initialize function on page load
-initialize();
+// call the initialise function on page load
+initialise();

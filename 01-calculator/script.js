@@ -208,7 +208,7 @@ class Calculator {
     }
 }
 
-// Initialize calculator when page loads
+// Initialise calculator when page loads
 document.addEventListener('DOMContentLoaded', () => {
     new Calculator();
 });
