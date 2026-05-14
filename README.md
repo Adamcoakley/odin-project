@@ -1,13 +1,13 @@
 # The Odin Project — Practice Repository
 
-This repository contains my exercises, projects, and notes from **[The Odin Project](https://www.theodinproject.com/)** — a free, open-source web development curriculum that teaches full-stack development through **project-based learning**.
+This repository contains my exercises, projects, and notes from **[The Odin Project](https://www.theodinproject.com/)** - a free, open-source web development curriculum that teaches full-stack development through **project-based learning**.
 
 ## 📚 About The Odin Project
 **The Odin Project** is a comprehensive, open-source program that helps learners become self-sufficient web developers.  
 It emphasises:
-- 💡 **Project-based learning** — build real applications as you learn  
+- 💡 **Project-based learning** - build real applications as you learn  
 - 🔧 **Hands-on coding** using modern web technologies  
-- 🌐 **Full-stack understanding** — from HTML & CSS to databases and deployment  
+- 🌐 **Full-stack understanding** - from HTML & CSS to databases and deployment  
 
 This repo serves as my personal workspace and portfolio of progress through the curriculum.
 
