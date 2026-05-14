@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors!</title>
+    <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="header">Rock, Paper, Scissors!</h1>
-
+ 
+    <h1 class="header">Rock Paper Scissors</h1>
+    <p class="subtitle">Choose your weapon</p>
+ 
     <div class="image-container">
-        <img id="rock" class="images" src="./images/rock.png" alt="rock">
-        <img id="paper" class="images" src="./images/paper.png" alt="paper">
-        <img id="scissors" class="images" src="./images/scissors.png" alt="scissors">
+        <img src="images/rock.png" alt="Rock" id="rock" class="images">
+        <img src="images/paper.png" alt="Paper" id="paper" class="images">
+        <img src="images/scissors.png" alt="Scissors" id="scissors" class="images">
     </div>
-
+ 
     <div class="outcome">
-        <h2 id="player-choice">Player:</h2>
-        <h2 id="computer-choice">Computer:</h2>
-        <h2 id="result" class="hidden">Result: <span id="result-text"></span></h2>
-        <h2 id="score" class="hidden">Score:</h2>
-        <button id="reset-btn">Reset Score</button>
+        <p id="player-choice"></p>
+        <p id="computer-choice"></p>
+        <div id="result" class="hidden">
+            <p id="result-text"></p>
+        </div>
     </div>
-
+ 
+    <p id="score" class="hidden"></p>
+    <button id="reset-btn">↺ Reset score</button>
+ 
     <script src="script.js"></script>
 </body>
 </html>
